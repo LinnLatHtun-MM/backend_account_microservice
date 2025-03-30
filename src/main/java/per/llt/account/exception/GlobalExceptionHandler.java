@@ -36,6 +36,10 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
      * Use Case	Web applications with UI (Thymeleaf, JSP)	    |   RESTful APIs
      **/
 
+    /**
+     * this global method works with validation errors for Entity classes
+     * Example: @Valid in AccountController and @Pattern(regexp = "(^$|[0-9]{10})", message = "Account number must be 10 digits") in AccountDto
+     **/
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
         Map<String, String> validationsErrors = new HashMap<>();

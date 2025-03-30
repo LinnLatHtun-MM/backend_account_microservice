@@ -3,7 +3,7 @@ package per.llt.account.constants;
 public class AccountConstants {
 
     private AccountConstants() {
-        //restrict instantiation
+        //restrict instantiation from other classes
     }
 
     public static final String SAVINGS = "Savings";
@@ -15,6 +15,6 @@ public class AccountConstants {
     public static final String STATUS_417 = "417";
     public static final String STATUS_500 = "500";
     public static final String MESSAGE_500 = "An error occurred. Please contact to the Administrator.";
-    public static final String MESSAGE_417_UPDATE = "Update operation failed. Please try again or contact Administrator team";
-    public static final String MESSAGE_417_DELETE = "Delete operation failed. Please try again or contact Administrator team";
+    public static final String MESSAGE_417_UPDATE = "Update operation failed. Please try again or contact Administrator";
+    public static final String MESSAGE_417_DELETE = "Delete operation failed. Please try again or contact Administrator";
 }
