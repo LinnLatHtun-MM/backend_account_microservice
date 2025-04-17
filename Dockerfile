@@ -40,3 +40,6 @@ ENTRYPOINT ["java","-jar","Account-0.0.1-SNAPSHOT.jar"]
 
 ## 11. Port mapping
 #      docker run -p 9090:8080 my-springboot-app
+
+## 12. Push image to the Docker Hub Repository
+#      docker image push docker.io/linnlathtun99/account:2025-04-17_22-14
