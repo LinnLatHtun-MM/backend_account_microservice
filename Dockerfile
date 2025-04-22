@@ -20,7 +20,7 @@ ENTRYPOINT ["java","-jar","Account-0.0.1-SNAPSHOT.jar"]
 #     docker build -t my-springboot-app:$TAG .
 
 ## 4. Build Command -
-#  docker build . -t linnlathtun99/account:$(date +%Y-%m-%d_%H:%M) (tag)
+#  docker build . -t linnlathtun99/account:$(date +%Y-%m-%d_%H%M) (tag)
 
 ## 5. show the images running docker
 #     docker images
@@ -43,3 +43,18 @@ ENTRYPOINT ["java","-jar","Account-0.0.1-SNAPSHOT.jar"]
 
 ## 12. Push image to the Docker Hub Repository
 #      docker image push docker.io/linnlathtun99/account:2025-04-17_22-14
+
+## 13. Pull image from the Docker Hub Repository
+#      docker pull docker.io/linnlathtun99/account:2025-04-17_22-14
+
+## 14. Running docker compose file
+#      docker compose up -d
+
+## 15. Stop and Remove container
+#      docker compose down
+
+## 16. Running docker container again
+#     docker compose start -d
+
+## 17. docker compose stop
+#      docker compose stop
