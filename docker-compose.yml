@@ -1,0 +1,37 @@
+services:
+  account-service:
+    image: "linnlathtun99/account:2025-04-19_1445"
+    container_name: account-service
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ABCBank
+  loan-service:
+    image: "linnlathtun99/loan:2025-04-19_1448"
+    container_name: loan-service
+    ports:
+      - "8081:8081"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ABCBank
+  card-service:
+    image: "linnlathtun99/card:2025-04-19_1450"
+    container_name: card-service
+    ports:
+      - "8082:8082"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ABCBank
+networks:
+  ABCBank:
+    driver: bridge
